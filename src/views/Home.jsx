@@ -6,13 +6,20 @@ class Home extends Component {
     render() { 
         return (
             <div>
+                <div>   
                 <h1>Home</h1>
 
-                <Alert id="alertOne" color="primary">
-                    Welcome to Ali Kurniawan
-                </Alert>
+                    <Alert id="alertOne" color="success">
+                        Welcome to Ali Kurniawan
+                    </Alert>
 
-                <Button color="primary">Login</Button>
+                    <Button color="primary">Login</Button>
+
+                    
+                </div>
+                <div>
+                    <h1>Hello You</h1>
+                </div>
                 
             </div>
             
