@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
+import PageControl from '../controll/PageControll';
 
 class About extends Component {
     state = {  }
     render() { 
         return (
-            <h1>About</h1>
+            <div>
+                <PageControl>
+                    <h1>About</h1>
+                </PageControl>
+            </div>
+            
           );
     }
 }
