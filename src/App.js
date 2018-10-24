@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import logo from './logo.svg';
 // own
-import { Container } from 'reactstrap';
+
 import './App.css';
 import './assets/css/index.css'
-import Nav from './views/Nav'
 import Home from './views/Home';
 import About from './views/About'
 import PageControll from './controll/PageControll'

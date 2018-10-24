@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Container} from 'reactstrap'
-import {Navigation} from '../model/Navigation'
+// import {Navigationx} from '../model/Navigation'
+import NavBra from '../model/NavBra'
 
 const PageControl = props => {
     return(
         <div>
             <Container>
-                <Navigation />
-                <h1>Navigation</h1>
-            {props.children}
+                <NavBra />
+                {/* <h1>Navigation</h1> */}
+                {props.children}
             </Container>
         </div>
         
