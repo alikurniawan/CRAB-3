@@ -4,7 +4,17 @@ import { Menu } from 'semantic-ui-react'
 export default class NavBra extends Component {
     state = {}
   
-    handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+    handleItemClickHome = function(){
+        document.location = "/"
+    }
+
+    handleItemClickAbout = function(){
+        document.location = "/about"
+    }
+
+    handleItemClickSignin = function(){
+        document.location = "/loginpage"
+    }
   
     render() {
       const { activeItem } = this.state
@@ -16,22 +26,23 @@ export default class NavBra extends Component {
           </Menu.Item>
   
           <Menu.Item
-            name='features'
-            active={activeItem === 'features'}
-            onClick={this.handleItemClick}
+            name='PrimaryHome'
+            active={activeItem === 'PrimaryHome'}
+            onClick={this.handleItemClickHome}
           >
-            Features
+            Home
           </Menu.Item>
   
           <Menu.Item
-            name='testimonials'
-            active={activeItem === 'testimonials'}
-            onClick={this.handleItemClick}
+            name='About'
+            active={activeItem === 'About'}
+            onClick={this.handleItemClickAbout}
           >
-            Testimonials
+            About
           </Menu.Item>
   
-          <Menu.Item name='sign-in' active={activeItem === 'sign-in'} onClick={this.handleItemClick}>
+          <Menu.Item name='sign-in' active={activeItem === 'sign-in'} 
+            onClick={this.handleItemClickSignin}>
             Sign-in
           </Menu.Item>
         </Menu>

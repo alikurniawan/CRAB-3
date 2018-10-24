@@ -8,19 +8,20 @@ import './assets/css/index.css'
 import Home from './views/Home';
 import About from './views/About'
 import PageControll from './controll/PageControll'
+import LoginPage from './views/LoginPage'
 
 class App extends Component {
   render() {
     return (
       <div>
         <PageControll>
-        <Router>
-          <Switch>
-              
-              <Route exact path="/" component={Home}/>
-              <Route path="/about" component={About}/>
-          </Switch>  
-        </Router>   
+          <Router>
+            <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route path="/about" component={About}/>
+                <Route path="/loginpage" component={LoginPage} />
+            </Switch>  
+          </Router>   
         </PageControll>
         
         
