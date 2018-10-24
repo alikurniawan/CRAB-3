@@ -4,6 +4,13 @@ import PageControll from '../controll/PageControll'
 
 class Home extends Component {
     state = {  }
+
+    btnLogin = function(){
+        let alertOne = document.getElementById("alertOne");
+
+        alertOne.slideUp()
+    }
+
     render() { 
         return (
             <div>
@@ -15,9 +22,7 @@ class Home extends Component {
                             Welcome to Ali Kurniawan
                         </Alert>
 
-                        <Button color="primary">Login</Button>
-
-                        
+                        <Button id="btnLogin" onClick={this.btnLogin} color="primary">Login</Button>
                     </div>
                     <div>
                         <h1>Hello You</h1>
