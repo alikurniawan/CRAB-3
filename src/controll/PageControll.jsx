@@ -6,7 +6,7 @@ const PageControl = props => {
     return(
         <div>
             <Container>
-                {/* <Navigation /> */}
+                <Navigation />
                 <h1>Navigation</h1>
             {props.children}
             </Container>
