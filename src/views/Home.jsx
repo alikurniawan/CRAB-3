@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Alert, Button} from 'reactstrap';
 import PageControll from '../controll/PageControll'
+import EmbedMov from '../model/EmbedMov';
 
 class Home extends Component {
     state = {  }
@@ -15,18 +16,7 @@ class Home extends Component {
         return (
             <div>
                 <PageControll>
-                    <div>   
-                    <h1>Home</h1>
-
-                        <Alert id="alertOne" color="success">
-                            Welcome to Ali Kurniawan
-                        </Alert>
-
-                        <Button id="btnLogin" onClick={this.btnLogin} color="primary">Login</Button>
-                    </div>
-                    <div>
-                        <h1>Hello You</h1>
-                    </div>
+                    <EmbedMov />
                 </PageControll>  
             </div>
             
