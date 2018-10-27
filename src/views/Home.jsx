@@ -16,6 +16,7 @@ class Home extends Component {
         return (
             <div>
                 <PageControll>
+                    {/* //test */}
                     <EmbedMov />
                 </PageControll>  
             </div>
